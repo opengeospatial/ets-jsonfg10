@@ -30,17 +30,12 @@
            <ctl:form method="POST" width="800" height="600" xmlns="http://www.w3.org/1999/xhtml">
              <h2>JSON-FG Part 1 v1.0 Conformance Test Suite</h2>
              <div style="background:#F0F8FF" bgcolor="#F0F8FF">
-               <p>The implementation under test (IUT) is checked against the following specifications:</p>
+               <p>The implementation under test (IUT) is checked against the following <b>candidate</b> Standard:</p>
                <ul>
-                 <li><a href="http://www.w3.org/TR/xml/">Extensible Markup Language (XML) 1.0</a>, 
-				 Fifth Edition</li>
-				 <li><a href="http://www.w3.org/TR/xmlbase/">XML Base</a>, Second Edition</li>
+                 <li><a href="https://docs.ogc.org/DRAFTS/21-045.html">OGC Features and Geometries JSON - Part 1: Core</a>, 
+				 version 1.0.0</li>
                </ul>
-               <p>Two conformance levels are defined:</p>
-               <ul>
-                 <li>Level 1</li>
-                 <li>Level 2</li>
-               </ul>
+ 
              </div>
              <fieldset style="background:#ccffff">
                <legend style="font-family: sans-serif; color: #000099; 
@@ -50,7 +45,7 @@
                  <label for="uri">
                    <h4 style="margin-bottom: 0.5em">Location of IUT (absolute http: or file: URI)</h4>
                  </label>
-                 <input id="uri" name="uri" size="128" type="text" value="http://www.w3schools.com/xml/note.xml" />
+                 <input id="uri" name="uri" size="128" type="text" value="https://raw.githubusercontent.com/opengeospatial/ogc-feat-geo-json/main/core/examples/airports.json" />
                </p>
                <p>
                  <label for="doc">
@@ -58,13 +53,7 @@
                  </label>
                  <input name="doc" id="doc" size="128" type="file" />
                </p>
-               <p>
-                 <label for="level">Conformance class: </label>
-                 <input id="level-1" type="radio" name="level" value="1" checked="checked" />
-                 <label for="level-1"> Level 1 | </label>
-                 <input id="level-2" type="radio" name="level" value="2" />
-                 <label class="form-label" for="level-2"> Level 2</label>
-               </p>
+
              </fieldset>
              <p>
                <input class="form-button" type="submit" value="Start"/> | 
